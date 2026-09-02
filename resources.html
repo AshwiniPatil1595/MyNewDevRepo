@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Resources</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>⚙</span> DevOps Roadmap
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="roadmap.html">
+            Roadmap
+        </a>
+
+        <a href="resources.html">
+            Resources
+        </a>
+
+    </nav>
+
+    <button id="themeToggle" class="theme-btn">
+        🌙
+    </button>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <span class="badge">
+            📚 Learning Resources
+        </span>
+
+        <h1>
+            DevOps Resources
+        </h1>
+
+        <p>
+            Useful documentation and learning resources
+            for your DevOps journey.
+        </p>
+
+    </section>
+
+
+    <!-- RESOURCE SEARCH -->
+
+    <section class="resource-controls container">
+
+        <input
+            type="text"
+            id="resourceSearch"
+            placeholder="🔎 Search resources..."
+        >
+
+        <div class="filter-buttons">
+
+            <button class="resource-filter active"
+                    data-category="all">
+                All
+            </button>
+
+            <button class="resource-filter"
+                    data-category="cloud">
+                Cloud
+            </button>
+
+            <button class="resource-filter"
+                    data-category="containers">
+                Containers
+            </button>
+
+            <button class="resource-filter"
+                    data-category="automation">
+                Automation
+            </button>
+
+            <button class="resource-filter"
+                    data-category="monitoring">
+                Monitoring
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESOURCES -->
+
+    <section class="resources-grid container">
+
+
+        <article class="resource-card"
+                 data-category="linux">
+
+            <div class="resource-icon">
+                🐧
+            </div>
+
+            <span class="resource-category">
+                Linux
+            </span>
+
+            <h3>
+                GNU Bash Manual
+            </h3>
+
+            <p>
+                Learn Bash commands, shell scripting and automation.
+            </p>
+
+            <a href="https://www.gnu.org/software/bash/manual/bash.html"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="git">
+
+            <div class="resource-icon">
+                🌱
+            </div>
+
+            <span class="resource-category">
+                Git
+            </span>
+
+            <h3>
+                Git Documentation
+            </h3>
+
+            <p>
+                Official Git documentation and command reference.
+            </p>
+
+            <a href="https://git-scm.com/docs"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="git">
+
+            <div class="resource-icon">
+                🐙
+            </div>
+
+            <span class="resource-category">
+                GitHub
+            </span>
+
+            <h3>
+                GitHub Docs
+            </h3>
+
+            <p>
+                Learn repositories, pull requests, Actions and more.
+            </p>
+
+            <a href="https://docs.github.com/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="cloud">
+
+            <div class="resource-icon">
+                ☁️
+            </div>
+
+            <span class="resource-category">
+                Cloud
+            </span>
+
+            <h3>
+                AWS Documentation
+            </h3>
+
+            <p>
+                Official documentation for AWS cloud services.
+            </p>
+
+            <a href="https://docs.aws.amazon.com/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="cloud">
+
+            <div class="resource-icon">
+                🔷
+            </div>
+
+            <span class="resource-category">
+                Cloud
+            </span>
+
+            <h3>
+                Microsoft Azure
+            </h3>
+
+            <p>
+                Learn Azure services, architecture and cloud solutions.
+            </p>
+
+            <a href="https://learn.microsoft.com/azure/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="containers">
+
+            <div class="resource-icon">
+                🐳
+            </div>
+
+            <span class="resource-category">
+                Containers
+            </span>
+
+            <h3>
+                Docker Documentation
+            </h3>
+
+            <p>
+                Learn Docker images, containers and Compose.
+            </p>
+
+            <a href="https://docs.docker.com/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="containers">
+
+            <div class="resource-icon">
+                ☸️
+            </div>
+
+            <span class="resource-category">
+                Containers
+            </span>
+
+            <h3>
+                Kubernetes Documentation
+            </h3>
+
+            <p>
+                Learn Kubernetes concepts, workloads and administration.
+            </p>
+
+            <a href="https://kubernetes.io/docs/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="automation">
+
+            <div class="resource-icon">
+                🏗️
+            </div>
+
+            <span class="resource-category">
+                Automation
+            </span>
+
+            <h3>
+                Terraform Documentation
+            </h3>
+
+            <p>
+                Learn Infrastructure as Code using Terraform.
+            </p>
+
+            <a href="https://developer.hashicorp.com/terraform/docs"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="automation">
+
+            <div class="resource-icon">
+                ⚡
+            </div>
+
+            <span class="resource-category">
+                Automation
+            </span>
+
+            <h3>
+                Ansible Documentation
+            </h3>
+
+            <p>
+                Automate server configuration and application deployment.
+            </p>
+
+            <a href="https://docs.ansible.com/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="automation">
+
+            <div class="resource-icon">
+                🔧
+            </div>
+
+            <span class="resource-category">
+                CI/CD
+            </span>
+
+            <h3>
+                Jenkins Documentation
+            </h3>
+
+            <p>
+                Learn Jenkins pipelines and continuous integration.
+            </p>
+
+            <a href="https://www.jenkins.io/doc/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="monitoring">
+
+            <div class="resource-icon">
+                📈
+            </div>
+
+            <span class="resource-category">
+                Monitoring
+            </span>
+
+            <h3>
+                Prometheus
+            </h3>
+
+            <p>
+                Learn metrics collection and monitoring.
+            </p>
+
+            <a href="https://prometheus.io/docs/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="monitoring">
+
+            <div class="resource-icon">
+                📊
+            </div>
+
+            <span class="resource-category">
+                Monitoring
+            </span>
+
+            <h3>
+                Grafana
+            </h3>
+
+            <p>
+                Build dashboards and visualize monitoring data.
+            </p>
+
+            <a href="https://grafana.com/docs/"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+
+        <article class="resource-card"
+                 data-category="monitoring">
+
+            <div class="resource-icon">
+                🔍
+            </div>
+
+            <span class="resource-category">
+                Monitoring
+            </span>
+
+            <h3>
+                Azure Application Insights
+            </h3>
+
+            <p>
+                Learn application monitoring, telemetry and diagnostics.
+            </p>
+
+            <a href="https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview"
+               target="_blank"
+               rel="noopener">
+                Open Resource →
+            </a>
+
+        </article>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section class="projects container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                HANDS-ON PRACTICE
+            </span>
+
+            <h2>
+                DevOps Project Ideas
+            </h2>
+
+            <p>
+                Projects are one of the best ways to demonstrate
+                DevOps skills.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <div class="project-card">
+
+                <span>01</span>
+
+                <h3>
+                    Docker Web Application
+                </h3>
+
+                <p>
+                    Containerize a web application using Docker
+                    and Docker Compose.
+                </p>
+
+                <div class="tags">
+                    <span>Docker</span>
+                    <span>Linux</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <span>02</span>
+
+                <h3>
+                    CI/CD Pipeline
+                </h3>
+
+                <p>
+                    Create an automated pipeline that builds,
+                    tests and deploys an application.
+                </p>
+
+                <div class="tags">
+                    <span>Git</span>
+                    <span>Jenkins</span>
+                    <span>Docker</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <span>03</span>
+
+                <h3>
+                    AWS Infrastructure
+                </h3>
+
+                <p>
+                    Create AWS infrastructure using Terraform.
+                </p>
+
+                <div class="tags">
+                    <span>AWS</span>
+                    <span>Terraform</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <span>04</span>
+
+                <h3>
+                    Kubernetes Deployment
+                </h3>
+
+                <p>
+                    Deploy a containerized application to Kubernetes.
+                </p>
+
+                <div class="tags">
+                    <span>Docker</span>
+                    <span>Kubernetes</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <span>05</span>
+
+                <h3>
+                    Monitoring Dashboard
+                </h3>
+
+                <p>
+                    Create a monitoring dashboard using Prometheus
+                    and Grafana.
+                </p>
+
+                <div class="tags">
+                    <span>Prometheus</span>
+                    <span>Grafana</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <span>06</span>
+
+                <h3>
+                    Complete DevOps Project
+                </h3>
+
+                <p>
+                    Combine Git, Docker, CI/CD, Terraform,
+                    Kubernetes and monitoring.
+                </p>
+
+                <div class="tags">
+                    <span>DevOps</span>
+                    <span>Cloud</span>
+                    <span>K8s</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 DevOps Roadmap. Built with HTML, CSS & JavaScript.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

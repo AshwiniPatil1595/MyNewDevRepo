@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Roadmap</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>⚙</span> DevOps Roadmap
+    </div>
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="roadmap.html">
+            Roadmap
+        </a>
+
+        <a href="resources.html">
+            Resources
+        </a>
+
+    </nav>
+
+    <button id="themeToggle" class="theme-btn">
+        🌙
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- HEADER -->
+
+    <section class="page-header">
+
+        <span class="badge">
+            🗺️ Learning Roadmap
+        </span>
+
+        <h1>
+            Complete DevOps Roadmap
+        </h1>
+
+        <p>
+            Follow the roadmap from beginner to advanced.
+            Check topics as you complete them.
+        </p>
+
+    </section>
+
+
+    <!-- PROGRESS -->
+
+    <section class="progress-section container">
+
+        <div class="progress-header">
+
+            <div>
+
+                <h2>
+                    Your Progress
+                </h2>
+
+                <p>
+                    <span id="completedCount">0</span>
+                    of
+                    <span id="totalCount">0</span>
+                    topics completed
+                </p>
+
+            </div>
+
+            <strong id="progressPercent">
+                0%
+            </strong>
+
+        </div>
+
+
+        <div class="progress-bar">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+
+        <button id="resetProgress" class="reset-btn">
+            Reset Progress
+        </button>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="roadmap-controls container">
+
+        <input
+            type="text"
+            id="roadmapSearch"
+            placeholder="🔎 Search roadmap topics..."
+        >
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="beginner">
+                Beginner
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="intermediate">
+                Intermediate
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="advanced">
+                Advanced
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ROADMAP -->
+
+    <section class="roadmap container">
+
+
+        <!-- 01 LINUX -->
+
+        <div class="roadmap-section"
+             data-level="beginner">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h2>
+                        Linux Fundamentals
+                    </h2>
+
+                    <p>
+                        Learn the operating system used by most
+                        DevOps environments.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="linux-files">
+
+                    <span>
+                        Linux file system
+                    </span>
+
+                </label>
+
+
+                <label class="roadmap-item">
+
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="linux-commands">
+
+                    <span>
+                        Basic Linux commands
+                    </span>
+
+                </label>
+
+
+                <label class="roadmap-item">
+
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="linux-permissions">
+
+                    <span>
+                        Users & permissions
+                    </span>
+
+                </label>
+
+
+                <label class="roadmap-item">
+
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="linux-process">
+
+                    <span>
+                        Processes & services
+                    </span>
+
+                </label>
+
+
+                <label class="roadmap-item">
+
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="linux-network">
+
+                    <span>
+                        Linux networking
+                    </span>
+
+                </label>
+
+
+                <label class="roadmap-item">
+
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="linux-shell">
+
+                    <span>
+                        Shell scripting
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 02 NETWORKING -->
+
+        <div class="roadmap-section"
+             data-level="beginner">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h2>
+                        Networking
+                    </h2>
+
+                    <p>
+                        Understand how servers communicate.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="network-ip">
+                    <span>IP addresses</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="network-subnet">
+                    <span>Subnetting</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="network-dns">
+                    <span>DNS</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="network-http">
+                    <span>HTTP / HTTPS</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="network-tcp">
+                    <span>TCP / UDP</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="network-firewall">
+                    <span>Firewalls</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 03 GIT -->
+
+        <div class="roadmap-section"
+             data-level="beginner">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    03
+                </span>
+
+                <div>
+
+                    <h2>
+                        Git & GitHub
+                    </h2>
+
+                    <p>
+                        Learn version control and collaboration.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="git-init">
+                    <span>Git basics</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="git-branch">
+                    <span>Branches</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="git-merge">
+                    <span>Merge & rebase</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="git-conflict">
+                    <span>Conflict resolution</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="github-pr">
+                    <span>Pull requests</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="github-actions">
+                    <span>GitHub Actions</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 04 PROGRAMMING -->
+
+        <div class="roadmap-section"
+             data-level="beginner">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    04
+                </span>
+
+                <div>
+
+                    <h2>
+                        Programming & Scripting
+                    </h2>
+
+                    <p>
+                        Learn scripting for automation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="python">
+                    <span>Python basics</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="bash">
+                    <span>Bash scripting</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="json">
+                    <span>JSON</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="yaml">
+                    <span>YAML</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 05 CLOUD -->
+
+        <div class="roadmap-section"
+             data-level="intermediate">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    05
+                </span>
+
+                <div>
+
+                    <h2>
+                        Cloud Computing
+                    </h2>
+
+                    <p>
+                        Learn AWS, Azure or another cloud platform.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="aws-ec2">
+                    <span>AWS EC2</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="aws-s3">
+                    <span>AWS S3</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="aws-vpc">
+                    <span>AWS VPC</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="aws-iam">
+                    <span>AWS IAM</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="azure-vm">
+                    <span>Azure Virtual Machines</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="azure-monitor">
+                    <span>Azure Monitor</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 06 DOCKER -->
+
+        <div class="roadmap-section"
+             data-level="intermediate">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    06
+                </span>
+
+                <div>
+
+                    <h2>
+                        Docker
+                    </h2>
+
+                    <p>
+                        Learn containerization and container management.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="docker-basics">
+                    <span>Docker fundamentals</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="docker-image">
+                    <span>Docker images</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="dockerfile">
+                    <span>Dockerfile</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="docker-compose">
+                    <span>Docker Compose</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="docker-registry">
+                    <span>Container registries</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 07 CI/CD -->
+
+        <div class="roadmap-section"
+             data-level="intermediate">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    07
+                </span>
+
+                <div>
+
+                    <h2>
+                        CI/CD
+                    </h2>
+
+                    <p>
+                        Automate build, test and deployment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="cicd-concepts">
+                    <span>CI/CD concepts</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="jenkins">
+                    <span>Jenkins</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="github-actions">
+                    <span>GitHub Actions</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="pipeline">
+                    <span>Pipeline design</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="deployment">
+                    <span>Automated deployment</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 08 TERRAFORM -->
+
+        <div class="roadmap-section"
+             data-level="intermediate">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    08
+                </span>
+
+                <div>
+
+                    <h2>
+                        Infrastructure as Code
+                    </h2>
+
+                    <p>
+                        Manage infrastructure using code.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="terraform-basics">
+                    <span>Terraform basics</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="terraform-provider">
+                    <span>Providers</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="terraform-state">
+                    <span>Terraform state</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="terraform-module">
+                    <span>Modules</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 09 ANSIBLE -->
+
+        <div class="roadmap-section"
+             data-level="intermediate">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    09
+                </span>
+
+                <div>
+
+                    <h2>
+                        Ansible
+                    </h2>
+
+                    <p>
+                        Automate server configuration and deployment.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="ansible-basics">
+                    <span>Ansible fundamentals</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="ansible-inventory">
+                    <span>Inventory</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="ansible-playbook">
+                    <span>Playbooks</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="ansible-role">
+                    <span>Roles</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 10 KUBERNETES -->
+
+        <div class="roadmap-section"
+             data-level="advanced">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    10
+                </span>
+
+                <div>
+
+                    <h2>
+                        Kubernetes
+                    </h2>
+
+                    <p>
+                        Learn container orchestration at scale.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="k8s-basics">
+                    <span>Kubernetes fundamentals</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="k8s-pods">
+                    <span>Pods</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="k8s-deployment">
+                    <span>Deployments</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="k8s-service">
+                    <span>Services</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="k8s-ingress">
+                    <span>Ingress</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="k8s-config">
+                    <span>ConfigMaps & Secrets</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 11 MONITORING -->
+
+        <div class="roadmap-section"
+             data-level="advanced">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    11
+                </span>
+
+                <div>
+
+                    <h2>
+                        Monitoring & Observability
+                    </h2>
+
+                    <p>
+                        Monitor applications, servers and infrastructure.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="prometheus">
+                    <span>Prometheus</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="grafana">
+                    <span>Grafana</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="logging">
+                    <span>Centralized logging</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="app-insights">
+                    <span>Azure Application Insights</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="alerts">
+                    <span>Alerts & dashboards</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 12 SECURITY -->
+
+        <div class="roadmap-section"
+             data-level="advanced">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    12
+                </span>
+
+                <div>
+
+                    <h2>
+                        DevSecOps
+                    </h2>
+
+                    <p>
+                        Integrate security into the DevOps lifecycle.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="security-basics">
+                    <span>Security fundamentals</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="secret-management">
+                    <span>Secret management</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="image-scanning">
+                    <span>Container scanning</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="security-pipeline">
+                    <span>Secure CI/CD pipelines</span>
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- 13 ADVANCED -->
+
+        <div class="roadmap-section"
+             data-level="advanced">
+
+            <div class="roadmap-title">
+
+                <span class="roadmap-number">
+                    13
+                </span>
+
+                <div>
+
+                    <h2>
+                        Advanced DevOps
+                    </h2>
+
+                    <p>
+                        Move towards senior and platform engineering.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topic-grid">
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="gitops">
+                    <span>GitOps</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="argocd">
+                    <span>Argo CD</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="helm">
+                    <span>Helm</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="cloud-architecture">
+                    <span>Cloud architecture</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="high-availability">
+                    <span>High availability</span>
+                </label>
+
+                <label class="roadmap-item">
+                    <input type="checkbox"
+                           class="roadmap-check"
+                           data-id="disaster-recovery">
+                    <span>Disaster recovery</span>
+                </label>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL PROJECT -->
+
+    <section class="project-cta container">
+
+        <div>
+
+            <span class="section-label">
+                PRACTICAL PROJECT
+            </span>
+
+            <h2>
+                Build a Production-Style DevOps Project
+            </h2>
+
+            <p>
+                Deploy an application using Git, Docker, CI/CD,
+                Terraform, Kubernetes and monitoring.
+            </p>
+
+        </div>
+
+        <a href="resources.html"
+           class="btn primary">
+            View Projects →
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 DevOps Roadmap. Built with HTML, CSS & JavaScript.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
